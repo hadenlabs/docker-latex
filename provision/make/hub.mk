@@ -11,15 +11,15 @@ hub.help:
 	@echo ''
 
 hub.build:
-	@echo " =====> Building $(IMAGE):${version}..."
-	@if [ -z ${version} ]; then \
+	@echo " ==> Building $(IMAGE):${version}..."
+	if [ -z ${version} ]; then \
 		$(docker-build) $(IMAGE):latest ;\
 	else \
 		$(docker-build) $(IMAGE):${version} images/${version} ;\
 	fi
 
 hub.push:
-	@echo " =====> Push $(IMAGE):${version}..."
+	@echo " ==> Push $(IMAGE):${version}..."
 	@if [ -z ${version} ]; then \
 		$(docker-push) $(IMAGE):latest ;\
 	else \
