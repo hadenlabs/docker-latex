@@ -1,0 +1,50 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: docker-latex
+
+email:
+  support: support@hadenlabs.com
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: 'MIT'
+
+# Canonical GitHub repo
+github_repo: hadenlabs/docker-latex
+
+# Badges to display
+badges:
+  - name: Lint
+    image: https://github.com/hadenlabs/docker-latex/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/hadenlabs/docker-latex/actions
+  - name: Issues
+    image: https://img.shields.io/github/issues/hadenlabs/docker-latex.svg
+    url: https://github.com/hadenlabs/docker-latex/issues
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/docker-latex.svg
+    url: https://github.com/hadenlabs/docker-latex/releases
+
+# Short description of this project
+description: |-
+  🐳 A ready to work Kali Linux full metapackage Docker container.
+
+requirements: |-
+
+  This is a list of dependences that need to be installed previously to enjoy all the goodies of this configuration:
+
+  * [docker](https://www.docker.com)
+
+usage: |
+
+  docker run --rm --net host --privileged hadenlabs/kali telnet
+
+
+include:
+  - 'docs/functions.md'
