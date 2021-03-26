@@ -33,6 +33,12 @@ GI:=gi
 # issues reviewers
 REVIEWERS?=luismayta
 
+# docker settings
+
+PARENT_IMAGE := ubuntu
+IMAGE := hadenlabs/xelatex
+VERSION ?= 4.1
+
 # Configuration.
 SHELL ?=/bin/bash
 ROOT_DIR=$(shell pwd)
